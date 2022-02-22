@@ -31,15 +31,6 @@ int getResult(int a, int b, int c, int x) {
 int main()
 {
     setlocale(LC_ALL, "ru");
-    short res;
-    __asm {
-        mov ax,3000
-        mov bx,2
-        cdq
-        div bx
-        mov res,ax
-    }
-    cout << res << endl;
     int a, b, c, x;
     cout << "Введите четыре значения : a, b, c, x. Для нахождения выражения (2ac-b/x-12)/(cx+a)." << endl;
     cout << "Значение a : ";
